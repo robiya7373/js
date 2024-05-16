@@ -13,32 +13,32 @@ const Button = () => {
       case colors.INCREMENT_RED:
         return {
           ...change,
-          red: change.red < 255 ? change.red + 2 : change.red,
+          red: change.red < 255 ? change.red + 1 : change.red,
         };
       case colors.DECREMENT_RED:
         return {
           ...change,
-          red: change.red > 0 ? change.red - 2 : change.red,
+          red: change.red > 0 ? change.red - 1 : change.red,
         };
       case colors.INCREMENT_GREEN:
         return {
           ...change,
-          green: change.green < 255 ? change.green + 2 : change.green,
+          green: change.green < 255 ? change.green + 1 : change.green,
         };
       case colors.DECREMENT_GREEN:
         return {
           ...change,
-          green: change.green > 0 ? change.green - 2 : change.green,
+          green: change.green > 0 ? change.green - 1 : change.green,
         };
       case colors.INCREMENT_BLUE:
         return {
           ...change,
-          blue: change.blue < 255 ? change.blue + 2 : change.blue,
+          blue: change.blue < 255 ? change.blue + 1 : change.blue,
         };
       case colors.DECREMENT_BLUE:
         return {
           ...change,
-          blue: change.blue > 0 ? change.blue - 2 : change.blue,
+          blue: change.blue > 0 ? change.blue - 1 : change.blue,
         };
       default:
         return change;
